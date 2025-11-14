@@ -164,9 +164,9 @@ your-project/
 
 **공통**: `data`, `width?`, `height(=360)`, `legend?`, `colors?`
 
-**막대/라인**: `orientation?`, `categoryGap?`, `rotateLabels?`, `valueAxis?`
+**막대**: `orientation?`, `categoryGap?`, `rotateLabels?`, `valueAxis?`
 
-**라인**: `color?`, `strokeWidth?`, `showDots?`, `dotRadius?`, `area?`
+**라인**: `color?`, `strokeWidth?`, `showDots?`, `dotRadius?`, `area?`, `rotateLabels?`, `valueAxis?`
 
 **그룹**: `seriesOrder?`, `seriesLabels?`, `seriesGap?`
 

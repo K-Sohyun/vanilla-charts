@@ -41,7 +41,6 @@ import { createColorScale } from "../core/colorScale.js";
  * @param {boolean} [props.showDots=true] - 포인트 표시 여부
  * @param {number} [props.dotRadius=3] - 포인트 반지름
  * @param {boolean} [props.rotateLabels=false] - X축 라벨 회전 여부
- * @param {number} [props.categoryGap=0.2] - 카테고리 간격 비율
  * @param {ValueAxisOpts} [props.valueAxis] - 값 축 설정
  * @param {Partial<import('../core/types').Padding>} [props.framePadding] - 프레임 패딩
  * @param {Record<string, string>} [props.seriesLabels] - 시리즈 라벨 매핑
@@ -61,7 +60,6 @@ export function createLineGroupChart(
     showDots = true,
     dotRadius = 3,
     rotateLabels = false,
-    categoryGap = 0.2,
     valueAxis,
     framePadding,
     seriesLabels,
@@ -141,7 +139,7 @@ export function createLineGroupChart(
       }
 
       // 스케일 생성
-      const xBand = bandScale(labels, 0, innerWidth, categoryGap);
+      const xBand = bandScale(labels, 0, innerWidth, 0.1);
       const yScale = linearScale(vMin, vMax, innerHeight, 0);
 
       // 각 시리즈별로 포인트와 라인 데이터 생성

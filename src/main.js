@@ -161,7 +161,6 @@ createLineChart(document.getElementById("line-chart"), {
   showDots: true,
   dotRadius: 4,
   area: true,
-  categoryGap: 0.15,
   rotateLabels: false,
   valueAxis: {
     min: 0,
@@ -186,7 +185,6 @@ createLineGroupChart(document.getElementById("line-group-chart"), {
   showDots: true,
   dotRadius: 3,
   area: false,
-  categoryGap: 0.4,
   rotateLabels: false,
   valueAxis: {
     min: 0,
@@ -216,7 +214,6 @@ createLineGroupChart(document.getElementById("line-group-area"), {
   showDots: true,
   dotRadius: 3,
   area: true,
-  categoryGap: 0.15,
   rotateLabels: false,
   framePadding: { top: 50 },
   valueAxis: {

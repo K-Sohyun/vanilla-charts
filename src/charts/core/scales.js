@@ -21,7 +21,7 @@ export const linearScale = (dMin, dMax, rMin, rMax) => {
  * @param {string[]} labels - 카테고리 라벨 배열 (예: ["1월", "2월", "3월"])
  * @param {number} rMin - 픽셀 좌표 최소값 (예: 0)
  * @param {number} rMax - 픽셀 좌표 최대값 (예: innerWidth)
- * @param {number} [gapRatio=0.2] - 막대차트는 0~1(간격 비율), 라인차트는 위치 조절 자유 값
+ * @param {number} [gapRatio=0.2] - 간격 비율 (0~1, 막대차트는 가변, 라인차트는 고정 0.1)
  * @returns {{ getX: (lab: string) => number, bandWidth: number, gapWidth: number }}
  */
 export const bandScale = (labels, rMin, rMax, gapRatio = 0.2) => {

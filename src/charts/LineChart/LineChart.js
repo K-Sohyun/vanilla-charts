@@ -32,7 +32,6 @@ import { renderAxisBand } from "../core/AxisBand.js";
  * @param {boolean} [props.showDots=true] - 포인트 표시 여부
  * @param {number} [props.dotRadius=3] - 포인트 반지름
  * @param {boolean} [props.rotateLabels=false] - X축 라벨 회전 여부
- * @param {number} [props.categoryGap=0.2] - 카테고리 간격 비율
  * @param {ValueAxisOpts} [props.valueAxis] - 값 축 설정
  * @param {Partial<import('../core/types').Padding>} [props.framePadding] - 프레임 패딩
  * @param {boolean} [props.area=false] - 영역(면) 채우기 여부
@@ -49,7 +48,6 @@ export function createLineChart(
     showDots = true,
     dotRadius = 3,
     rotateLabels = false,
-    categoryGap = 0.2,
     valueAxis,
     framePadding,
     area = false,
@@ -88,7 +86,7 @@ export function createLineChart(
       const ticks = makeTicks(vMin, vMax, valueAxis?.ticks);
 
       // 스케일 생성
-      const xBand = bandScale(labels, 0, innerWidth, categoryGap);
+      const xBand = bandScale(labels, 0, innerWidth, 0.1);
       const yScale = linearScale(vMin, vMax, innerHeight, 0);
 
       // 포인트 계산
