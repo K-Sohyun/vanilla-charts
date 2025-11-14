@@ -162,7 +162,7 @@ your-project/
 
 ## 🧩 옵션 한눈에
 
-**공통**: `data`, `width?`, `height(=360)`, `legend?`, `colors?`
+**공통**: `data`, `width?`, `height(=360)`, `legend?`, `colors?`, `framePadding?`
 
 **막대**: `orientation?`, `categoryGap?`, `rotateLabels?`, `valueAxis?`
 
@@ -170,7 +170,7 @@ your-project/
 
 **그룹**: `seriesOrder?`, `seriesLabels?`, `seriesGap?`
 
-**파이/도넛**: `innerRadiusRatio` (0=pie, ~0.6=donut)
+**파이/도넛**: `innerRadiusRatio?` (0=파이, 0.6=도넛)
 
 ---
 
