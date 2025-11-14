@@ -1,0 +1,29 @@
+/* BarChart styles */
+.bar {
+  transform-box: fill-box;
+  transition: transform 480ms ease, opacity 480ms ease;
+  will-change: transform;
+  opacity: 0.8;
+}
+
+/* 세로형: 바닥에서 위로 */
+.bar-chart--vert .bar {
+  transform-origin: bottom center;
+  transform: scaleY(0);
+}
+
+.bar-chart--vert .bar--animated {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+/* 가로형: 왼쪽에서 오른쪽으로 */
+.bar-chart--hori .bar {
+  transform-origin: center left;
+  transform: scaleX(0);
+}
+
+.bar-chart--hori .bar--animated {
+  transform: scaleX(1);
+  opacity: 1;
+}

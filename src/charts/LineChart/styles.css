@@ -1,0 +1,32 @@
+/* LineChart styles */
+.line-path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: line-draw 900ms ease-out forwards;
+}
+
+.line-area {
+  opacity: 0;
+  fill-opacity: 0.2;
+  animation: line-fade 200ms ease forwards;
+  animation-delay: 900ms;
+}
+
+.line-dot {
+  opacity: 0;
+  animation: line-fade 200ms ease forwards;
+  animation-delay: 900ms;
+  transition: opacity 0.2s;
+}
+
+@keyframes line-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line-fade {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,49 @@
+/* PieChart styles */
+.pie-chart-box {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pie-slice {
+  transition: filter 180ms ease;
+}
+
+.pie-slice:hover {
+  filter: brightness(1.1);
+}
+
+.pie-empty-ring {
+  fill: none;
+  stroke: #f5f5f5;
+  stroke-width: 2px;
+}
+
+/* 시계방향 스윕 애니메이션 마스크 */
+.pie-mask-sweep {
+  fill: none;
+  stroke: #fff;
+  stroke-width: calc(var(--r) * 2);
+  stroke-dasharray: var(--circ);
+  stroke-dashoffset: var(--circ);
+  animation: pie-sweep 800ms ease-out forwards;
+  transform-origin: var(--cx) var(--cy);
+  transform: rotate(-90deg);
+  stroke-linecap: butt;
+}
+
+@keyframes pie-sweep {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.pie-separator-radial {
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+.pie-separator-ring {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+}

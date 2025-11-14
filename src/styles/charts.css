@@ -1,0 +1,60 @@
+/* 차트 래퍼 */
+.chart-wrapper {
+  position: relative;
+  user-select: none;
+}
+
+/* 차트 범례 */
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.chart-legend--right {
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 0.2rem;
+}
+
+.legend-label {
+  font-size: 1.2rem;
+}
+
+/* 차트 툴팁 */
+.chart-tooltip {
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -100%);
+  padding: 0.6rem 0.8rem;
+  background: #111827;
+  color: #fff;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.chart-tooltip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 0.6rem solid transparent;
+  border-top-color: #111827;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Charts Demo</title>
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/charts.css" />
+    <link rel="stylesheet" href="/src/charts/BarChart/styles.css" />
+    <link rel="stylesheet" href="/src/charts/LineChart/styles.css" />
+    <link rel="stylesheet" href="/src/charts/PieChart/styles.css" />
+  </head>
+  <body>
+    <main class="page-container">
+      <h2 class="page-title">Dashboard Charts</h2>
+
+      <!-- 1. 막대 세로 -->
+      <section class="chart-section">
+        <h3 class="sub-title">세로 막대 차트</h3>
+        <div id="bar-chart-vertical"></div>
+      </section>
+
+      <!-- 2. 막대 가로 -->
+      <section class="chart-section">
+        <h3 class="sub-title">가로 막대 차트</h3>
+        <div id="bar-chart-horizontal"></div>
+      </section>
+
+      <!-- 3. 그룹 막대 세로 -->
+      <section class="chart-section">
+        <h3 class="sub-title">그룹 세로 막대 차트</h3>
+        <div id="bar-group-vertical"></div>
+      </section>
+
+      <!-- 4. 그룹 막대 가로 -->
+      <section class="chart-section">
+        <h3 class="sub-title">그룹 가로 막대 차트</h3>
+        <div id="bar-group-horizontal"></div>
+      </section>
+
+      <!-- 5. 단일 라인 -->
+      <section class="chart-section">
+        <h3 class="sub-title">단일 라인 차트</h3>
+        <div id="line-chart"></div>
+      </section>
+
+      <!-- 6. 그룹 라인 -->
+      <section class="chart-section">
+        <h3 class="sub-title">그룹 라인 차트</h3>
+        <div id="line-group-chart"></div>
+      </section>
+
+      <!-- 7. 그룹 라인 (면 활성화) -->
+      <section class="chart-section">
+        <h3 class="sub-title">그룹 라인 차트 (면 활성화)</h3>
+        <div id="line-group-area"></div>
+      </section>
+
+      <!-- 8. 파이 차트 -->
+      <section class="chart-section">
+        <h3 class="sub-title">파이 차트</h3>
+        <div id="pie-chart"></div>
+      </section>
+
+      <!-- 9. 도넛 차트 -->
+      <section class="chart-section">
+        <h3 class="sub-title">도넛 차트</h3>
+        <div id="donut-chart"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

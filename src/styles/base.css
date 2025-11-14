@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: "Noto Sans KR", Roboto, Arial, sans-serif;
+  color: #222;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: "Noto Sans KR", Roboto, Arial, sans-serif;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* 페이지 CSS */
+.page-container {
+  max-width: 103rem;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+}
+
+.page-title {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.sub-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.chart-section {
+  margin-bottom: 8rem;
+}
